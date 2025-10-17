@@ -1,4 +1,15 @@
 /* Geral */
+
+/* Principal */
+@font-face {
+    font-family: "Intelo Regular";
+    src: url("../fonts/Intelo-Regular.woff") format("woff"),
+         url("../fonts/Intelo-Regular.woff2") format("woff2");
+         font-weight: normal;
+         font-style: normal;
+}
+
+/* Secundaria */
 @font-face {
   font-family: "Charlie Display";
   src: url("../fonts/Charlie-Display.woff") format("woff"),
@@ -22,7 +33,7 @@
 }
 body {
     background-color: antiquewhite !important;
-    font-family: "Charlie Display"!important;
+    font-family: "Intelo Regular"!important;
     color: black;
 }
 
@@ -347,7 +358,7 @@ body {
   }
 
   .sobre-inicial-titulo h1{
-    font-size: 3.3rem;
+    font-size: 3rem;
     text-align: center;
     line-height: 4.3rem;
     color: #EC1847;
