@@ -46,6 +46,11 @@ body {
   from { opacity: 0%; transform: translateX(-80%) };
   to { opacity: 100%; transform: translateX(0%);}
 }
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 /* Página Inicial*/
 
@@ -105,7 +110,6 @@ body {
   .navbar {
     animation: fadeInRight 1.2s ease-in-out;
     background-color: #EC1847;
-
   }
 
   /* Corpo principal*/
@@ -205,20 +209,25 @@ body {
     display: block;
     min-width: 50%;
     max-width: 70%;
-    border-radius: 2rem;
-    padding: 0.5rem 0.8rem;
-    border: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
   }
 
-  .btn-color , .btn-color2{
-    background-color: white;
-    color: #EC1847;
+  .btn-color{
+      margin-top: .3rem;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
+      background-size: 200% 200%;
+      border: none;
+      color: white;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   }
-  .btn-color:hover, .btn-color2:hover{
-    background-color: #EC1847;
-    color: white;
+
+  .btn-color:hover{
+    animation: gradient-animation 1s ease infinite;
+  }
+
+  .btn-color:focus{
+    animation: gradient-animation 1s ease infinite;
   }
 
   .triangulo {
@@ -321,6 +330,7 @@ body {
       background-color: #EC1847;
       border-radius: 50%;
       color: #D5A955;
+      transition: background-color .5s ease;
     }
 
     .redes a:hover{
@@ -337,6 +347,7 @@ body {
   }
 
   .sobre-fundo {
+    background: linear-gradient(22deg, #fdda8d 30%, #fff 120%);
     padding: 2rem;
     background-color: #fdda8d;
     animation: fadeInUp 1s ease-in-out;
@@ -402,6 +413,7 @@ body {
   }
 
   .solucoes-texto {
+    background: linear-gradient(22deg, #fdda8d 30%, #fff 120%);
     padding: 4rem;
     background-color: #fdda8d;
   }
@@ -423,19 +435,18 @@ body {
   }
 
   .btn-color3 {
-    display: block;
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
-    border: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-    background-color: white;
-    color: #EC1847;
+      margin-top: .3rem;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
+      background-size: 200% 200%;
+      border: none;
+      color: white;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   }
 
   .btn-color3:hover {
-    background-color: #EC1847;
-    color: white;
+    animation: gradient-animation 1s ease infinite;
   }
 
   /* Números */
@@ -524,8 +535,10 @@ body {
       min-height: 38.5rem;
       border: 1px solid rgba(236, 24, 71, 0.5);
       flex: 1 1 25%;
-      background-color: #fdda8d;
       transition: transform .5s ease;
+      background: linear-gradient(22deg, #fdda8d 0%, #ffffff 100%);
+      box-shadow: .3rem .3rem .3rem .3rem rgba(0,0,0,0.5);
+      box-shadow: 0.2rem 0.2rem 0.8rem 0.1rem rgba(0,0,0,0.5);
     }
 
     .servicos-item:hover {
@@ -581,15 +594,16 @@ body {
       padding: 0rem 1rem 1rem 1rem;
     }
 
+    /* Animação botão */
     .servicos-botao button {
       margin-top: .3rem;
       padding: 0.3rem 1rem;
       border-radius: 20px;
+      background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
+      background-size: 200% 200%;
       border: none;
-      background-color: #EC1847;
       color: white;
       box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      transition: background-color 0.3s ease;
     }
 
     .servicos-botao button svg {
@@ -597,8 +611,11 @@ body {
     }
 
     .servicos-botao button:hover {
-      background-color: white;
-      color: #EC1847;
+      animation: gradient-animation 1s ease infinite;
+    }
+
+    .servicos-botao button:focus {
+      animation: gradient-animation 1s ease infinite;
     }
 
   /* Responsividade */
