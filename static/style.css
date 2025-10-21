@@ -32,7 +32,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: antiquewhite !important;
+    background-color: #fffcf4 !important;
     font-family: "Intelo Regular"!important;
     color: black;
 }
@@ -55,10 +55,6 @@ body {
 /* Página Inicial*/
 
   /* Cabeçalho */
-  .navbar {
-    margin-top: 38px;
-  }
-
   .navbar .nav-link {
     position: relative;
     display: inline-block;
@@ -104,7 +100,7 @@ body {
   /* Animação menu de navegação */
   .barra-superior {
     animation: fadeInRight 1s ease-in-out;
-    background-color: #c62728;
+    background-color: #EC1847;
   }
 
   .navbar {
@@ -117,7 +113,7 @@ body {
   /* Hero banner */
   .hero-banner {
     min-height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
                 url(../static/banner-constrular.png);
     background-size: cover;
     background-position: center;
@@ -132,28 +128,41 @@ body {
   .hero-text {
     margin-left: 1rem;
     display: flex;
-    color: #D5A955;
+    color: white;
     width: 100%;
+    margin-top: calc(4rem + 4vh);
   }
 
   .hero-text-left {
     max-width: 50%;
     margin: auto 0 auto 0;
   }
+  .hero-text-left h2 {
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .hero-text-left-titulo {
+    margin-top: -0.7rem;
+    font-size: calc(5rem + 0.5vw)!important;
+    margin-left: 2rem;
+  }
 
   .hero-text-right {
     display: flex;
+    flex-direction: row-reverse;
     margin: auto 0 auto auto;
     max-width: 50%;
   }
 
   .hero-text-right-info {
-    margin: auto 0 auto auto;
+    margin: 2rem -4rem auto auto;
     max-width: 70%;
   }
 
   .hero-text-right-info h2{
-    font-size: 2rem!important;
+    font-size: calc(2.5rem + 0.5vw)!important;
+    font-weight: bold;
     text-align: center;
   }
 
@@ -164,12 +173,12 @@ body {
   }
 
   .hero-text-right-map {
-    max-width: 30%;
-    margin: auto 0 -4rem -7rem;
+    max-width: 25%;
   }
 
   .hero-text .hero-text-right-map img{
     width: 100%;
+    margin: 7rem auto auto auto;
   }
 
   .hero-text ul{
@@ -178,6 +187,7 @@ body {
 
   .hero-text li {
     color: white;
+    font-size: calc(1rem + 0.5vw) ;
   }
 
   .hero-text li::marker {
@@ -185,11 +195,8 @@ body {
   }
 
   .hero-text h2 {
-    font-size: 3.5rem;
-  }
-
-  .hero-text h1 {
-    font-size: 4.5rem;
+    font-weight: bold;
+    font-size: calc(3.5rem + 0.7vw);
   }
 
   .hero-button{
@@ -254,7 +261,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: -6rem;
+    margin-top: 2rem;
     height: 35vh;
     width: 100%;
   }
@@ -265,23 +272,27 @@ body {
       width: 40%;
       height: 100%;
       animation: fadeInUp 1s ease-in-out;
+      filter: brightness(0.8);
     }
 
     .video-conteudo video{
       object-fit: cover;
       width: 100%;
       height: 100%;
+      border-radius: 15px;
     }
 
     /* Slide */
 
     .slide {
+      border-radius: 15px;
       width: 30%;
       height: 100%;
       margin-left: 2rem;
       animation: fadeInUp 1.2s ease-in-out;
       position: relative;
       overflow: hidden;
+      filter: brightness(0.8);
     }
 
     .slider, .slider ul, .slider ul li {
@@ -311,6 +322,7 @@ body {
 
     /* Redes Sociais */
     .redes {
+      border-radius: 15px;
       height: 100%;
       width: 30%;
       margin-left: 2rem;
@@ -338,52 +350,6 @@ body {
       background-color: #D5A955;
     }
 
-  /* Sobre Nós da Página Inicial */
-  .sobre-inicial {
-    width: 100%;
-    height: 100%;
-    margin: 1rem 0 0 0;
-    padding: 1rem;
-  }
-
-  .sobre-fundo {
-    background: linear-gradient(22deg, #fdda8d 30%, #fff 120%);
-    padding: 2rem;
-    background-color: #fdda8d;
-    animation: fadeInUp 1s ease-in-out;
-  }
-
-  .sobre-inicial-titulo {
-    padding: 0 11rem 0 11rem
-  }
-
-  .sobre-inicial-texto {
-    padding: 0 14rem 0 14rem;
-  }
-
-  .sobre-inicial-divisor {
-    margin: auto;
-    height: .3rem;
-    width: 10rem;
-    background: linear-gradient(90deg, #EC1847 0%, #D5A955 100%);
-  }
-
-  .sobre-inicial-titulo h1{
-    font-size: 3rem;
-    text-align: center;
-    line-height: 4.3rem;
-    color: #EC1847;
-    animation: fadeInUp 1s ease-in-out;
-  }
-
-  .sobre-inicial-texto p {
-    font-size: calc(0.625rem + .5vw);
-    margin-top: 1rem;
-    text-align: center;
-    line-height: 1.8rem;
-    animation: fadeInUp 1s ease-in-out;
-  }
-
   /* Soluções */
   .solucoes {
     padding: 2rem;
@@ -396,6 +362,7 @@ body {
 
   .solucoes-img {
     animation: fadeInUp 1s ease-in-out;
+    filter: brightness(0.8);
   }
 
   .solucoes-texto {
@@ -410,20 +377,20 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
   }
 
   .solucoes-texto {
-    background: linear-gradient(22deg, #fdda8d 30%, #fff 120%);
+    background-color: #EC1847;
+    color: white;
     padding: 4rem;
-    background-color: #fdda8d;
+    text-align: center;
+    align-content: center;
+    border-radius: 15px;
   }
 
   .solucoes-texto ul {
     padding: 0;
-  }
-
-  .solucoes-texto h2 {
-    color: #EC1847;
   }
 
   .solucoes-texto li::marker{
@@ -438,10 +405,9 @@ body {
       margin-top: .3rem;
       padding: 0.3rem 1rem;
       border-radius: 20px;
-      background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
       background-size: 200% 200%;
       border: none;
-      color: white;
+      color: #EC1847;
       box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   }
 
@@ -498,6 +464,11 @@ body {
   }
 
   /* Serviços */
+  .servicos {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #fffce8;
+  }
     /* Serviços Cabeçalho*/
     .servicos-head {
       margin-bottom: 1rem;
@@ -519,7 +490,6 @@ body {
 
     .servicos-head h2 {
       padding: 2rem;
-      color: #EC1847;
     }
 
     /* Serviços Corpo*/
@@ -529,20 +499,16 @@ body {
       justify-content: center;
       width: 100%;
       gap: 1rem;
+      margin-bottom: 10rem;
     }
 
     .servicos-item {
-      min-height: 38.5rem;
-      border: 1px solid rgba(236, 24, 71, 0.5);
-      flex: 1 1 25%;
+      border-radius: 20px;
+      flex: 1 1 19%;
       transition: transform .5s ease;
-      background: linear-gradient(22deg, #fdda8d 0%, #ffffff 100%);
-      box-shadow: .3rem .3rem .3rem .3rem rgba(0,0,0,0.5);
-      box-shadow: 0.2rem 0.2rem 0.8rem 0.1rem rgba(0,0,0,0.5);
     }
 
     .servicos-item:hover {
-      border: 1.5px solid rgba(236, 24, 71, 1);
       transform: scale(1.03);
     }
 
@@ -576,34 +542,49 @@ body {
 
     .servicos-texto {
       padding: 1rem;
-      min-height: 45%;
+      min-height: 7rem;
     }
 
     .servicos-item h4 {
-      color: #EC1847;
-      text-wrap: balance;
+      font-size: calc(.6rem + 0.5vw);
+      text-align: center;
+    }
+
+    .servicos-head ul {
+      font-size: calc(1rem + .3vw);
     }
 
     .servicos-item li::marker {
       color: #EC1847;
     }
 
+    .servicos-icon svg{
+      display: block;
+      margin: 2rem auto;
+      color: #EC1847;
+    }
+
+
     /* Serviços Botão */
     .servicos-botao {
-      border-top: 1px solid rgba(236, 24, 71, 0.5);
       padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .servicos-botao a{
+      text-decoration: none;
     }
 
     /* Animação botão */
     .servicos-botao button {
-      margin-top: .3rem;
-      padding: 0.3rem 1rem;
+      text-align: center;
+      display: block;
+      margin: .3rem auto;
+      padding: 0.5rem 1.5rem;
       border-radius: 20px;
       background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
       background-size: 200% 200%;
       border: none;
       color: white;
-      box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     }
 
     .servicos-botao button svg {
@@ -648,12 +629,7 @@ body {
 
     .hero-text h2 {
       margin: 0;
-      font-size: 2.5rem;
-    }
-    
-    .hero-text h1 {
-      margin: 0;
-      font-size: 3.5rem;
+      font-size: calc(2.5rem + 1vw);
     }
 
     .hero-text-left {
@@ -679,7 +655,8 @@ body {
 
     .hero-text-right-info h2 {
       text-align: start;
-      margin-top: 2rem;
+      margin-top: calc(1rem + 1vw);
+      font-size: calc(2rem + 1vw)!important;
     }
 
     .hero-button {
@@ -702,13 +679,14 @@ body {
       align-items: stretch;
     }
 
-    .video-conteudo, .slider, .slide, .slide ul, .slide li, .redes {
+    .video-conteudo, .slide {
+      display: none;
+    }
+
+    .redes {
       width: 100%;
       height: 100%;
     }
-
-    .video-conteudo,
-    .slide,
     .redes {
       width: 100%;
       aspect-ratio: 16/9;
