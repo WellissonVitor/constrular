@@ -112,7 +112,7 @@ body {
 
   /* Hero banner */
   .hero-banner {
-    min-height: 90vh;
+    min-height: 85vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
                 url(../static/banner-constrular.png);
     background-size: cover;
@@ -130,7 +130,7 @@ body {
     display: flex;
     color: white;
     width: 100%;
-    margin-top: calc(4rem + 4vh);
+    margin-top: calc(1rem + 3vh);
   }
 
   .hero-text-left {
@@ -261,7 +261,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 2rem;
+    margin-top: -4rem;
     height: 35vh;
     width: 100%;
   }
