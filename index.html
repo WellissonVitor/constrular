@@ -78,9 +78,8 @@
             </div>
         </nav>
     </header>
-    <!-- Corpo principal -->
+    <!-- Corpo Principal -->
     <main>
-        <!-- Hero banner -->
         <section class="hero-banner">
             <div class="container-xxl">
                 <div class="hero-text">
@@ -102,11 +101,11 @@
                             <div class="hero-button">
                                 <div>
                                     <div class="triangulo"></div>
-                                    <button class="btn-color">Muniz Freire</button>
+                                    <button class="btn-color hero-btn">Muniz Freire</button>
                                 </div>
                                 <div>
                                     <div class="triangulo"></div>
-                                    <button class="btn-color">Piaçu</button>
+                                    <button class="btn-color hero-btn">Piaçu</button>
                                 </div>
                             </div>
                         </div>
@@ -114,57 +113,41 @@
                 </div>
             </div>
         </section>
-        <!-- Seção de conteúdos -->
-        <section class="conteudo">
+        <!-- Apresentação -->
+        <section class="apresentacao">
             <div class="container-xxl">
-                <div class="video-conteudo">
-                    <video autoplay muted loop>
-                        <source src="static/video-exemplo.mp4" type="video/mp4">
-                        <p>Seu navegador não suporta vídeos</p>
-                    </video>
+                <div class="apresentacao-img">
+                    <div class="apresentacao-img-1 desativo">
+                        <img src="static/apresentacao-foto-exemplo-1.jpg" alt="">
+                    </div>
+                    <div class="apresentacao-img-2 desativo">
+                        <img src="static/apresentacao-foto-exemplo-2.jpg" alt="">
+                    </div>
+                    <div class="apresentacao-img-3 desativo">
+                        <img src="static/apresentacao-foto-exemplo-3.jpg" alt="">
+                    </div>
+                    <div class="apresentacao-img-4 desativo">
+                        <img src="static/apresentacao-foto-exemplo-4.jpg" alt="">
+                    </div>
                 </div>
-                <div class="slide">
-                    <ul class="slider">
-                        <li class="li-active">
-                            <img src="static/foto-exemplo-1.png" alt="">
-                        </li>
-                        <li>
-                            <img src="static/foto-exemplo-2.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="static/foto-exemplo-3.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="static/foto-exemplo-4.jpg" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <div class="redes">
-                    <a href=""><i class="bi bi-whatsapp"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-youtube"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                </div>
-            </div>
-        </section>
-        <!-- Soluções -->
-        <section class="solucoes">
-            <div class="container-xxl">
-                <div class="solucoes-img">
-                    <img src="static/foto-exemplo-6.jpg" alt="">
-                </div>
-                <div class="solucoes-texto">
-                    <h2> Há mais de 30 anos, a constrular ajuda a transformar projetos em realidade</h2>
-                    <a href="sobre.html"><button class="btn-color3">Sobre Nós</button></a>
+                <div class="apresentacao-texto desativo">
+                    <h2> Há mais de 30 anos, a constrular ajuda a transformar projetos em realidade.</h2>
+                    <a href="sobre.html"><button class="btn-color">Sobre Nós</button></a>
+                    <div class="apresentacao-redes desativo">
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-youtube"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Números -->
         <section id="numeros" class="numeros">
             <div class="container-xxl">
-                <div id="num-1" class="num">
+                <div class="num num-1 desativo">
                     <div class="num-icon">
                         <h1 class="contador" data-total="35">0</h1><i class="bi bi-plus-lg"></i>
                     </div>
@@ -172,7 +155,7 @@
                         <p>Anos de mercado</p>
                     </div>
                 </div>
-                <div id="num-2" class="num">
+                <div class="num num-2 desativo">
                     <div class="num-icon">
                         <h1 class="contador" data-total="40">0</h1><i class="bi bi-plus-lg"></i>
                     </div>
@@ -180,7 +163,7 @@
                         <p>Funcionários capacitados<br>Aproximadamente 50% mulheres</p>
                     </div>
                 </div>
-                <div id="num-3" class="num">
+                <div class="num num-3 desativo">
                     <div class="num-icon">
                         <h1 class="contador" data-total="20">0</h1><i class="bi bi-plus-lg"></i>
                     </div>
@@ -191,17 +174,27 @@
             </div>
         </section>
         <!-- Serviços -->
-        <section id="servicos" class="servicos">
+        <section class="servicos">
             <div class="container-xxl">
-                <!-- Materiais de Construção -->
-                <div class="servicos-head">
-                    <ul><li>Nossos Serviços</li></ul>
-                    <h2>Construímos cada etapa com você , do traço no papel ao último detalhe de acabamento.</h2>
+                <!-- Cabeçalho -->
+                <div class="section-cabecalho-textos">
+                    <div class="section-cabecalho-textos-titulo">
+                        <h3>Nossos Serviços</h3>
+                    </div>
+                    <div class="section-cabecalho-textos-paragrafo">
+                        <p>
+                            Na Constrular, não vendemos apenas produtos. Entregamos suporte técnico, 
+                            frota própria para agilizar as entregas e um relacionamento próximo com 
+                            clientes, profissionais da construção, empresas e prefeituras.
+                        </p>
+                    </div>
                 </div>
-                <div id="item-1" class="servicos-corpo">
-                    <div class="servicos-item">
+                <!-- Cards -->
+                <div class="servicos-items">
+                    <!-- Item 1 -->
+                    <div class="servicos-item item-1 desativo">
                         <div class="servicos-icon">
-                            <svg fill="currentColor" width="100px" height="100px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <svg fill="currentColor" width="35px" height="35px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                 <g data-name="Layer 47" id="Layer_47">
                                     <path d="M50,4H14a8,8,0,0,0-8,8,7.9,7.9,0,0,0,.59,3c0,.1.1.2.15.3a.79.79,0,0,0,.13.26A8,8,0,0,0,14,20H39v6a3,3,0,0,1-3,3H28a5,5,0,0,0-5,5v1a5,5,0,0,0,1.25,3.31A5,5,0,0,0,28,40h8a3,3,0,0,1,3,3v2H36a1,1,0,0,0-1,1V60a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V46a1,1,0,0,0-1-1H41V43a5,5,0,0,0-5-5H28a3,3,0,0,1-3-3V34a3,3,0,0,1,3-3h8a5,5,0,0,0,5-5V20h9a8,8,0,0,0,7.13-4.44l.13-.25c.05-.11.11-.2.15-.31A7.9,7.9,0,0,0,58,12,8,8,0,0,0,50,4ZM40.5,55c.28,0,.5.45.5,1s-.22,1-.5,1h-3c-.28,0-.5-.45-.5-1s.22-1,.5-1ZM55.18,15a5.55,5.55,0,0,0-1-1.23A6,6,0,0,0,50,12H14a6,6,0,0,0-5.18,3H6.69a1,1,0,0,1,.1-.43A8,8,0,0,1,14,10H50a8,8,0,0,1,5.65,2.36,7.88,7.88,0,0,1,1.57,2.22,1.06,1.06,0,0,1,.09.42Z"/>
                                     <path d="M14,22a1,1,0,0,0-1,1v6a1,1,0,0,0,2,0V23A1,1,0,0,0,14,22Z"/>
@@ -210,35 +203,26 @@
                                 </g>
                             </svg>
                         </div>
-                        <!--
-                            <img src="static/materiais.jpg" alt="">
-                        -->
-                        <div class="servicos-texto">
-                            <h4>A sua melhor escolha em materias de construção</h4>
-                            <!--
-                            <h5>Da base ao acabamento, temos tudo para sua obra</h5>
-                            <p>
-                                <ul>
-                                    <li>Cimento</li>
-                                    <li>Pisos</li>
-                                    <li>Tinta</li>
-                                    <li>Lampadas</li>
-                                </ul>
-                            </p>
-                            -->
+                        <div class="servicos-item-textos">
+                            <div class="servicos-item-titulo">
+                                <h4>Materiais de construção</h4>
+                            </div>
+                            <div class="servicos-item-paragrafo">
+                                <p>Da base ao acabamento, temos tudo para sua obra.</p>
+                            </div>
                         </div>
-                        <div class="servicos-botao">
+                        <div class="servicos-item-button">
                             <a href="">
-                                <button>
+                                <button class="btn-color">
                                     Catálogo
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <!-- Aluguel de Máquinas -->
-                    <div id="item-2" class="servicos-item">
+                    <!-- Item 2 -->
+                    <div class="servicos-item item-2 desativo">
                         <div class="servicos-icon">
-                            <svg height="100px" width="100px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 376.846 376.846" xml:space="preserve">
+                            <svg height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 376.846 376.846" xml:space="preserve">
                                 <g>
                                     <path style="fill:currentColor;" d="M364.966,372.743c2.382-2.39,4.316-4.324,4.316-4.324l4.316-4.324
                                         c2.382-2.398-1.691-13.453-9.104-24.695l-19.013-28.865c-7.413-11.242-19.127-21.565-26.174-23.044
@@ -260,35 +244,26 @@
                                 </g>
                             </svg>
                         </div>
-                        <!--
-                            <img src="static/compactador2.png" alt="">
-                        -->
-                        <div class="servicos-texto">
-                            <h4>Aluguel de máquinas e equipamentos</h4>
-                            <!--
-                            <p>
-                                <ul>
-                                    <li>Andaime</li>
-                                    <li>Betoneiras</li>
-                                    <li>Compactador de Solo</li>
-                                    <li>Placa Vibratória</li>
-                                    <li>Marteletes 10kg e 30kg</li>
-                                </ul>
-                            </p>
-                            -->
+                        <div class="servicos-item-textos">
+                            <div class="servicos-item-titulo">
+                                <h4>Aluguel de equipamentos</h4>
+                            </div>
+                            <div class="servicos-item-paragrafo">
+                                <p>Andaimes, Betoneiras, Compactadores, Marteletes</p>
+                            </div>
                         </div>
-                        <div class="servicos-botao">
+                        <div class="servicos-item-button">
                             <a href="">
-                                <button>
-                                    Máquinas
+                                <button class="btn-color">
+                                    Detalhes
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <!-- Aluguel de Munck -->
-                    <div id="item-3" class="servicos-item">
+                    <!-- Item 3 -->
+                    <div class="servicos-item item-3 desativo">
                         <div class="servicos-icon">
-                            <svg fill="currentColor" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            <svg fill="currentColor" height="35px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="0 0 512 512" xml:space="preserve">
                                 <g>
                                     <g>
@@ -317,34 +292,26 @@
                                 </g>
                             </svg>
                         </div>
-                        <!--
-                            <img src="static/munck.png" alt="">
-                        -->
-                        <div class="servicos-texto">
-                            <h4>Aluguel de Munck</h4>
-                            <!--
-                            <h5>Em todo o sul do ES</h5>
-                            <p>
-                                <ul>
-                                    <li>Munck 5ton</li>
-                                    <li>Munck 15ton</li>
-                                    <li>Munck 20ton</li>
-                                </ul>
-                            </p>
-                            -->
+                        <div class="servicos-item-textos">
+                            <div class="servicos-item-titulo">
+                                <h4>Aluguel de<br>Munck</h4>
+                            </div>
+                            <div class="servicos-item-paragrafo">
+                                <p>Transportar, movimentar e descarregar cargas pesadas.</p>
+                            </div>
                         </div>
-                        <div class="servicos-botao">
+                        <div class="servicos-item-button">
                             <a href="">
-                                <button>
-                                    Alugar
+                                <button class="btn-color">
+                                    Detalhes
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <!-- Distribuição de Blocos -->
-                    <div id="item-4" class="servicos-item">
+                    <!-- Item 4 -->
+                    <div class="servicos-item item-4 desativo">
                         <div class="servicos-icon">
-                            <svg fill="currentColor" height="100px" width="100px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402.686 402.686" xml:space="preserve">
+                            <svg fill="currentColor" height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402.686 402.686" xml:space="preserve">
                                 <g>
                                     <path d="M15,193.754h96.605c8.271,0,15-6.729,15-15V148.67c0-8.271-6.729-15-15-15H15c-8.271,0-15,6.729-15,15v30.084
                                         C0,187.025,6.729,193.754,15,193.754z"/>
@@ -377,34 +344,26 @@
                                 </g>
                             </svg>
                         </div>
-                        <!--
-                            <img src="static/blocos.jpg" alt="">
-                        -->
-                        <div class="servicos-texto">
-                            <h4>Distribuição de Blocos e artefatos de concreto</h4>
-                            <!--
-                            <p>
-                                <ul>
-                                    <li>Blocos</li>
-                                    <li>Cobogós</li>
-                                    <li>Ladrilhos</li>
-                                    <li>Pré-Moldados</li>
-                                </ul>
-                            </p>
-                            -->
+                        <div class="servicos-item-textos">
+                            <div class="servicos-item-titulo">
+                                <h4>Distribuição de Blocos</h4>
+                            </div>
+                            <div class="servicos-item-paragrafo">
+                                <p>Artefatos de concreto e areia de rio, de nossa fábrica.</p>
+                            </div>
                         </div>
-                        <div class="servicos-botao">
-                            <a href="blocos.html">
-                                <button>
+                        <div class="servicos-item-button">
+                            <a href="">
+                                <button class="btn-color">
                                     Catálogo
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <!-- Constrular Design Studio -->
-                    <div id="item-5" class="servicos-item">
+                    <!-- Item 5 -->
+                    <div class="servicos-item item-5 desativo">
                         <div class="servicos-icon">
-                            <svg fill="currentColor" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                            <svg fill="currentColor" height="35px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
                                 <g>
                                     <g>
                                         <g>
@@ -422,27 +381,18 @@
                                 </g>
                             </svg>
                         </div>
-                        <!--
-                            <img src="static/projeto.jpg" alt="">
-                        -->
-                        <div class="servicos-texto">
-                            <h4>Constrular Design Studio</h4>
-                            <!--
-                            <h5>Rede de arquitetos parceiros prontos para te atender</h5>
-                            <p>
-                                <ul>
-                                    <li>Revisão de Projetos</li>
-                                    <li>Plantas</li>
-                                    <li>Consultoria</li>
-                                    <li>Design</li>
-                                </ul>
-                            </p>
-                            -->
+                        <div class="servicos-item-textos">
+                            <div class="servicos-item-titulo">
+                                <h4>Constrular Design Studio</h4>
+                            </div>
+                            <div class="servicos-item-paragrafo">
+                                <p>Rede de arquitetos parceiros prontos para te atender.</p>
+                            </div>
                         </div>
-                        <div class="servicos-botao">
+                        <div class="servicos-item-button">
                             <a href="">
-                                <button>
-                                    Entrar em Contato
+                                <button class="btn-color">
+                                    Saiba Mais
                                 </button>
                             </a>
                         </div>
@@ -450,30 +400,49 @@
                 </div>
             </div>
         </section>
-        <!-- Alugueis e máquinas -->
-        <section class="aluguel">
+        <!--Projetos-->
+        <section class="projetos">
             <div class="container-xxl">
-
+                <!-- Cabeçalho -->
+                <div class="section-cabecalho-textos">
+                    <div class="section-cabecalho-textos-titulo">
+                        <h3>Projetos em destaque</h3>
+                    </div>
+                    <div class="section-cabecalho-textos-paragrafo">
+                        <p>
+                            Explore nosso portfólio de projetos concluídos que demonstram 
+                            nosso comprometimento com qualidade, precisão e satisfação do cliente.
+                        </p>
+                    </div>
+                </div>
+                <!--Corpo-->
+                <div class="projetos-corpo">
+                    <div class="projetos-itens">
+                        <!--Item 1-->
+                        <div class="projetos-item-1 desativo">
+                            <div class="projeto-titulo">
+                                <h4>Cobogó</h4>
+                            </div>
+                        </div>
+                        <!--Item 2-->
+                        <div class="projetos-item-2 desativo">
+                            <div class="projeto-titulo">
+                                <h4>Casa</h4>
+                            </div>
+                        </div>
+                            <!--Item 3-->
+                        <div class="projetos-item-3 desativo">
+                           <div class="projeto-titulo">
+                                <h4>Escada</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- Trabalhe conosco -->
-        <section class="trabalhe-conosco">
-            <div class="container-xxl">
-
-            </div>
+        <section>
+            
         </section>
     </main>
-    <!-- Rodapé -->
-    <footer>
-        <section class="sobre">
-
-        </section>
-        <section class="contato">
-
-        </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!-- Link JavaScript -->
-    <script src="static/script.js"></script>
 </body>
 </html>

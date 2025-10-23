@@ -1,19 +1,24 @@
-/* Slide automático em "conteúdo" */
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide li");
-    let current_slide = 0;
-
-    function change_slide() {
-        slides[current_slide].classList.remove("li-active");
-        current_slide = (current_slide + 1) % slides.length;
-        slides[current_slide].classList.add("li-active");
-    }
-
-    setInterval(change_slide, 3000);
-})
-
 /* Contador Números */
 document.addEventListener("DOMContentLoaded", function() {
+
+    /* Inicializador de animação das divs */
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("desativo");
+                entry.target.classList.add("ativo");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    const divsParaAnimar = document.querySelectorAll(".desativo");
+
+    divsParaAnimar.forEach(div => {
+        observer.observe(div);
+    });
+
+    /* Contador de Números*/
     const elementos = document.querySelectorAll(".num");
 
     elementos.forEach((elemento) => {
