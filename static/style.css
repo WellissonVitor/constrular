@@ -1,30 +1,7 @@
 /* Geral */
 
 /* Principal */
-  @font-face {
-      font-family: "Intelo Regular";
-      src: url("../fonts/Intelo-Regular.woff") format("woff"),
-          url("../fonts/Intelo-Regular.woff2") format("woff2");
-          font-weight: normal;
-          font-style: normal;
-  }
-
-/* Secundaria */
-  @font-face {
-    font-family: "Charlie Display";
-    src: url("../fonts/Charlie-Display.woff") format("woff"),
-        url("../fonts/Charlie-Display.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Charlie Display Bold";
-    src: url("../fonts/Charlie-Display-Bold.woff"),
-        url("../fonts/Charlie-Display-Bold.woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
+@import url(https://db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans); 
 
   * {
       margin: 0;
@@ -33,7 +10,7 @@
   }
   body {
       background-color: #fffcf4 !important;
-      font-family: "Intelo Regular" !important;
+      font-family: "Open Sans" !important;
       color: black;
       font-size: calc(1rem + 1vw);
   }
@@ -259,11 +236,11 @@
       }
 
       .btn-color:hover{
-        animation: gradient-animation 1s ease infinite;
+        animation: gradient-animation 1.5s ease infinite;
       }
 
       .btn-color:focus{
-        animation: gradient-animation 1s ease infinite;
+        animation: gradient-animation 1.5s ease infinite;
       }
 
       .triangulo {
@@ -581,7 +558,7 @@
   }
 
   .projetos-item-1.ativo {
-    animation: fadeInUp 1s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
   }
 
   .projetos-item-1::before {
@@ -597,7 +574,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    transition: transform 1s ease;
+    transition: transform 1.5s ease;
   }
 
   .projetos-item-1:hover::before {
@@ -607,7 +584,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 1);
-    transform:scale(1.2)
+    transform:scale(1.1)
   }
 
   .projetos-item-2 {
@@ -622,7 +599,7 @@
   }
 
   .projetos-item-2.ativo {
-    animation: fadeInUp 1.2s ease-in-out;
+    animation: fadeInUp 1.7s ease-in-out;
   }
 
   .projetos-item-2::before {
@@ -638,7 +615,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    transition: transform 1s ease;
+    transition: transform 1.5s ease;
   }
 
   .projetos-item-2:hover::before {
@@ -648,7 +625,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 1);
-    transform:scale(1.2)
+    transform:scale(1.1)
   }
 
   .projetos-item-3 {
@@ -663,7 +640,7 @@
   }
 
   .projetos-item-3.ativo {
-    animation: fadeInUp 1.4s ease-in-out;
+    animation: fadeInUp 1.9s ease-in-out;
   }
 
   .projetos-item-3::before {
@@ -679,7 +656,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    transition: transform 1s ease;
+    transition: transform 1.5s ease;
   }
 
   .projetos-item-3:hover::before {
@@ -689,7 +666,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 1);
-    transform:scale(1.2)
+    transform:scale(1.1)
   }
   
   .projetos-item-1 h4, .projetos-item-2 h4, .projetos-item-3 h4 {
