@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.remove("desativo");
-                entry.target.classList.add("ativo");
+                entry.target.classList.remove("desativado");
+                entry.target.classList.add("ativado");
                 observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.2 });
 
-    const divsParaAnimar = document.querySelectorAll(".desativo");
+    const divsParaAnimar = document.querySelectorAll(".desativado");
 
     divsParaAnimar.forEach(div => {
         observer.observe(div);
