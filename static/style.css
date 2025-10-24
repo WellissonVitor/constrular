@@ -334,7 +334,7 @@
   }
 
   .apresentacao-img, .apresentacao-texto {
-    width: 50%;
+    flex: 1 1 50%;
   }
 
   .apresentacao-img img {
@@ -830,4 +830,43 @@
   .fundo p {
     text-align: center;
     margin: 0;
+  }
+
+  @media (max-width: 1280px) {
+    .hero-text {
+      padding: 0rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero-text-right {
+      margin: auto;
+      min-width: 40%;
+    }
+
+    .hero-text-right-info {
+      max-width: 100%;
+      margin: auto;
+    }
+    
+    .hero-text-right-map {
+      display: none;
+    }
+    .apresentacao .container-xxl {
+      flex-direction: column;
+    }
+
+    .servicos-items {
+      flex-wrap: wrap;
+    }
+
+    .item-4::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .item-3::after {
+      display: none;
+    }
   }
