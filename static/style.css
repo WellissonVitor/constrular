@@ -1064,7 +1064,7 @@
     }
 
     .hero-text h2 {
-      font-size: calc(1.5rem + 5vw);
+      font-size: calc(1.5rem + 5vw)!important;
     }
 
     .hero-text-left {
@@ -1087,7 +1087,7 @@
 
     .hero-text-right-info h2 {
       text-align: start;
-      font-size: calc(1.5rem + 4vw);
+      font-size: calc(1.5rem + 4vw)!important;
     }
 
     .hero-button {
