@@ -1187,15 +1187,6 @@
 
     .chamada-corpo .section-cabecalho-textos {
       padding: 0;
-      text-align: center;
-    }
-
-    .chamada-corpo .section-cabecalho-textos-paragrafo {
-      text-align: center;
-    }
-
-    .chamada-button {
-      gap: 2rem;
     }
 
     /* Footer */
