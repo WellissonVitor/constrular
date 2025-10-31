@@ -1063,6 +1063,10 @@
       display: block;
     }
 
+    .hero-text h2 {
+      font-size: calc(1.5rem + 5vw);
+    }
+
     .hero-text-left {
       max-width: 100%;
     }
@@ -1083,6 +1087,7 @@
 
     .hero-text-right-info h2 {
       text-align: start;
+      font-size: calc(1.5rem + 4vw);
     }
 
     .hero-button {
@@ -1116,7 +1121,7 @@
     }
 
     .apresentacao-redes {
-      gap: .5rem;
+      gap: 1rem;
     }
 
     /* Números */
