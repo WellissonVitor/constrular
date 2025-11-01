@@ -1,0 +1,304 @@
+/* Geral */
+
+  /* Fonte */
+    @import url(https://db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans); 
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body {
+      background-color: #fffcf4 !important;
+      font-family: "Open Sans" !important;
+      color: rgb(56, 56, 56)!important;
+      font-size: calc(1rem + 1vw);
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  /* Cabeçalho das seções */
+    .section-cabecalho-textos {
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    .section-cabecalho-textos-titulo {
+      display: flex;
+      justify-content: center;
+      color: #EC1847;
+    }
+
+    .section-cabecalho-textos-titulo h2 {
+      font-weight: bold;
+      font-size: calc(1rem + 2vw);
+    }
+
+    .section-cabecalho-textos-paragrafo {
+      margin: auto;
+      text-align: center;
+      max-width: 40rem;
+      padding-top: 1rem;
+    }
+  
+  /* Animações */
+    @keyframes fadeInUp {
+      from { opacity: 0%; transform: translateY(80%);};
+      to { opacity: 100%; transform: translateY(0%);}
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0%; transform: translateX(-80%);};
+      to { opacity: 100%; transform: translateX(0%);}
+    }
+    @keyframes gradient-animation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes zoomInOut {
+      from {transform: scale(1)};
+      to { transform: scale(1.2)}
+    }
+    
+    .desativado {
+      opacity: 0;
+      animation: none;
+    }
+    
+  /* Cabeçalho */
+    .navbar .nav-link {
+      position: relative;
+      display: inline-block;
+      padding-bottom: .35rem;
+      transition: color .25s ease;
+    }
+
+    .navbar .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #D5A955;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform .28s ease;
+      pointer-events: none;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus {
+      color: #D5A955;
+    }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link:focus::after {
+      transform: scaleX(1);
+    }
+
+    .navbar-toggler {
+        border: none!important;
+        box-shadow: none!important;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23d5a955' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>")!important;
+    }
+    .nav-info {
+        border-bottom: 1px solid #ffffff;
+    }
+
+  /* Animação menu de navegação */
+    .barra-superior {
+      background-color: #EC1847;
+    }
+
+    .barra-superior .container-xxl.ativado {
+      animation: fadeInRight 1s ease-in-out;
+    }
+
+    .navbar {
+      background-color: #EC1847;
+    }
+
+    .navbar .container-xxl.ativado {
+      animation: fadeInRight 1.2s ease-in-out;
+    }
+
+  /* Rodapé */
+    footer {
+      background-color: #fcf5e2;
+    }
+
+    footer .container-xxl {
+      padding: 2rem;
+      width: 100vw;
+    }
+
+    footer h4 {
+      color: black;
+      padding: 1rem 0;
+      font-weight: bold;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-topo {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .footer-info {
+      flex: 1 1 30%;
+      text-wrap: balance;
+    }
+
+    .footer-info-img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .footer-info-img img {
+      width: 70%;
+    }
+
+    .footer-contato {
+      flex: 1 1 70%;
+      display: flex;
+      gap: 3rem;
+    }
+
+    .footer-contato .localizacao a {
+      color: #EC1847;
+    }
+
+    .localizacao, .contato {
+      flex: 1 1 33%;
+    }
+
+    .footer-redes {
+      flex: 1 1 33%;
+    }
+
+    .fundo {
+      height: 60px;
+      color: white;
+      background-color: #EC1847;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .fundo p {
+      text-align: center;
+      margin: 0;
+    }
+
+  /* Responsividade */
+    @media (max-width: 1280px) {
+
+    }
+
+    @media (max-width: 1024px) {
+      /* Geral */
+        section {
+          padding: 1rem;
+        }
+
+      /* Footer */
+        .footer-info {
+          flex: 1 1 25%;
+        }
+
+        .footer-contato {
+          flex: 1 1 75%;
+        }
+    }
+
+    @media (max-width: 768px) {
+      /* Footer */
+        .footer-topo {
+          flex-direction: column;
+        }
+
+        .footer-info {
+          flex: 1 1 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .footer-info-img img {
+          width: 100%;
+        }
+
+        .footer-info-texto p {
+          text-align: center;
+        }
+
+        .footer-contato {
+          flex: 1 1 100%;
+          justify-content: center;
+        }
+    }
+
+    @media (max-width: 640px) {
+    }
+
+    @media (max-width: 480px) {
+      /* Geral */
+        .container-xxl, .projetos .container-xxl {
+          padding: 0;
+        }
+
+        section {
+          padding: .5rem;
+        }
+
+      /* Cabeçalho das seções */
+        .section-cabecalho-textos {
+          padding-bottom: 0;
+          text-wrap: balance;
+          line-height: 2;
+          padding: 1rem;
+        }
+
+        .section-cabecalho-textos-titulo {
+          justify-content: start;
+        }
+
+        .section-cabecalho-textos-titulo h2 {
+          font-size: calc(2rem + 2.5vw);
+        }
+
+        .section-cabecalho-textos-paragrafo {
+          text-align: start;
+          margin: 0 0 2rem 0;
+        }
+
+      /* Footer */
+        footer .container-xxl {
+          padding: .5rem;
+          margin: 2rem 0;
+        }
+
+        .footer-topo {
+          gap: 1rem;
+        }
+
+        .footer-contato {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .localizacao h4, .contato h4, .footer-redes h4 {
+          padding: .5rem 0;
+        }
+  }
