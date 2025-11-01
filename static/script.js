@@ -1,6 +1,28 @@
-/* Contador Números */
-document.addEventListener("DOMContentLoaded", function() {
+/* Carregador do Header e Footer */
+async function loadLayout() {
+    const headerDiv = document.getElementById("header");
+    const footerDiv = document.getElementById("footer");
 
+    if (headerDiv) {
+        const header = await fetch("header.html").then(res => res.text());
+        headerDiv.innerHTML = header;
+
+        headerDiv.querySelectorAll(".desativado").forEach(el => {
+            el.classList.remove("desativado");
+            el.classList.add("ativado");
+        });
+    }
+
+    if (footerDiv) {
+        const footer = await fetch("footer.html").then(res => res.text());
+        footerDiv.innerHTML = footer
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    loadLayout();
+    
     /* Inicializador de animação das divs */
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {

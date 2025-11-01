@@ -1,5 +1,4 @@
 /* Geral */
-
   /* Fonte */
     @import url(https://db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans); 
 
@@ -10,7 +9,7 @@
   }
   body {
       background-color: #fffcf4 !important;
-      font-family: "Open Sans" !important;
+      font-family: "Open Sans"!important;
       color: rgb(56, 56, 56)!important;
       font-size: calc(1rem + 1vw);
   }
