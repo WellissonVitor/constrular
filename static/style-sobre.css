@@ -168,8 +168,16 @@
         margin: 1rem;
     }
 
-    .sobre-texto-paragrafo {
-        
+    .sobre-video {
+        min-height: 40vh;
+    }
+
+    .sobre-video video {
+        min-height: 40vh;
+    }
+
+    .sobre-texto-1, .sobre-texto-2 {
+        gap: 0;
     }
 }
 
