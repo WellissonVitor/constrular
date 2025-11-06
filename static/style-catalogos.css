@@ -1,0 +1,186 @@
+/* Catalogos */
+.catalogos .container-xxl {
+    display: flex;
+}
+
+.barra-lateral, .catalogo {
+    margin: 0;
+}
+
+.barra-lateral {
+    background-color: #EC1847;
+    padding: .5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.catalogo-icon {
+    color: white;
+    padding: .7rem;
+    border-radius: 10px;
+    transition: background-color .5s ease;
+}
+
+.catalogo-icon:hover,.catalogo-icon.selecionado {
+    background-color: white;
+    color: #EC1847;
+    cursor: pointer;
+}
+
+.catalogo {
+    flex: 1 1 90%;
+    width: 100%;
+    background-color: #EC1847;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.catalogo-todo {
+    display: none;
+}
+
+.catalogo-todo.selecionado {
+    display: flex;
+}
+
+.catalogo-corpo {
+    margin: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.catalogo-titulo {
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+    padding: 1rem;
+    color: #EC1847;
+    background-color: white;
+    filter: blur(1);
+}
+
+.catalogo-titulo h2.ativado {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.catalogo-conteudo {
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.catalogo-conteudo-descricao {
+    flex: 1 1 25%;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(236, 24, 71, 1) 0%, rgba(198, 39, 40, 1) 100%);
+}
+
+.catalogo-conteudo-descricao-titulo {
+    color: white;
+    padding-top: 5rem;
+}
+
+.catalogo-conteudo-descricao-titulo h3 {
+    font-weight: 600;
+    font-size: calc(1rem + 2vw);
+}
+
+.catalogo-conteudo-descricao-titulo h3.ativado {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.catalogo-conteudo-descricao-texto {
+    color: #D5A955;
+}
+
+.catalogo-conteudo-descricao-texto p {
+    font-weight: 600;
+    font-size: calc(.7rem + 1vw);
+}
+
+.catalogo-conteudo-descricao-texto p.ativado {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.catalogo-itens {
+    flex: 1 1 75%;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.catalogo-item {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.catalogo-item.ativado {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.catalogo-item-img {
+    flex: 1 1 25%;
+    max-height: 200px;
+}
+
+.catalogo-item-img img {
+    max-height: 100%;
+}
+
+.catalogo-item-caracteristicas {
+    flex: 1 1 75%;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.catalogo-item-caracteristicas-titulo {
+    padding: 1rem;
+    flex: 1 1 40%;
+    background-color: #EC1847;
+    color: white;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.catalogo-item-caracteristicas-titulo h4 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.catalogo-item-caracteristicas-nome, .catalogo-item-caracteristicas-valor {
+    flex: 1 1 30%;
+    display: flex;
+    gap: .5rem;
+}
+
+.nome, .valor {
+    flex: 1 1 20%;
+    padding: .5rem;
+    align-content: center;
+}
+
+.nome p, .valor p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.nome {
+    background-color: #EC1847;
+    border-radius: 10px;
+    color: white;
+}
+
+.valor {
+    border-radius: 10px;
+    border: 1px solid #EC1847;
+    color: black;
+    font-weight: 600;
+}
