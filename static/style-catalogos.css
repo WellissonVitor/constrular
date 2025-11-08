@@ -1,4 +1,12 @@
 /* Catalogos */
+.desselecionado {
+    display: none;
+}
+
+.selecionado{
+    display: block;
+}
+
 .catalogos .container-xxl {
     display: flex;
 }
@@ -25,7 +33,7 @@
     transition: background-color .5s ease;
 }
 
-.catalogo-icon:hover,.catalogo-icon.selecionado {
+.catalogo-icon:hover,.catalogo-icon.icon-selecionado {
     background-color: #EC1847;
     color: white;
     cursor: pointer;
@@ -68,14 +76,6 @@
 .catalogo-conteudo-descricao-titulo {
     color: white;
     padding-top: 5rem;
-}
-
-.desselecionado {
-    display: none;
-}
-
-.selecionado {
-    display: block;
 }
 
 .catalogo-conteudo-descricao-titulo h3 {
