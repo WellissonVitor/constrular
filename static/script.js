@@ -19,7 +19,6 @@ async function loadLayout() {
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function() {
     loadLayout();
     
@@ -69,4 +68,57 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, atualizacao);
     }
+
+    /* Observador Catalogo - Muda titulo e descrição do catalogo */
+    const divScroll = document.querySelector(".catalogo-itens");
+
+    const catalogo_observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                document.querySelectorAll(".selecionado").forEach(el => {
+                    el.classList.remove("selecionado");
+                    el.classList.add("desselecionado");
+                });
+
+                if (entry.target.classList.contains("blocos")) {
+                    document.querySelector(".bloco.titulo").classList.remove("desselecionado");
+                    document.querySelector(".bloco.titulo").classList.add("selecionado");
+
+                    document.querySelector(".bloco.texto").classList.remove("desselecionado");
+                    document.querySelector(".bloco.texto").classList.add("selecionado");
+                }
+                else if (entry.target.classList.contains("cobogos")) {
+                    document.querySelector(".cobogo.titulo").classList.remove("desselecionado");
+                    document.querySelector(".cobogo.titulo").classList.add("selecionado");
+
+                    document.querySelector(".cobogo.texto").classList.remove("desselecionado");
+                    document.querySelector(".cobogo.texto").classList.add("selecionado");
+                }
+                else if (entry.target.classList.contains("ladrilhos")) {
+                    document.querySelector(".ladrilho.titulo").classList.remove("desselecionado");
+                    document.querySelector(".ladrilho.titulo").classList.add("selecionado");
+
+                    document.querySelector(".ladrilho.texto").classList.remove("desselecionado");
+                    document.querySelector(".ladrilho.texto").classList.add("selecionado");
+                }
+                else if (entry.target.classList.contains("pre-moldados")) {
+                    document.querySelector(".pre-moldado.titulo").classList.remove("desselecionado");
+                    document.querySelector(".pre-moldado.titulo").classList.add("selecionado");
+
+                    document.querySelector(".pre-moldado.texto").classList.remove("desselecionado");
+                    document.querySelector(".pre-moldado.texto").classList.add("selecionado");
+                }
+            }
+        });
+    }, 
+    { 
+        root: divScroll,
+        threshold: 1
+    });
+
+    const divsParaObservar = document.querySelectorAll(".blocos, .cobogos, .ladrilhos, .pre-moldados");
+
+    divsParaObservar.forEach(div => {
+        catalogo_observer.observe(div);
+    });
 });
