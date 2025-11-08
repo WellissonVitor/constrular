@@ -68,7 +68,7 @@
 }
 
 .catalogo-conteudo-descricao {
-    flex: 1 1 30%;
+    flex: 1 1 25%;
     padding: 1rem;
     background: linear-gradient(90deg, rgba(236, 24, 71, 1) 0%, rgba(198, 39, 40, 1) 100%);
 }
@@ -80,7 +80,7 @@
 
 .catalogo-conteudo-descricao-titulo h3 {
     font-weight: 600;
-    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 1.5vw);
 }
 
 .catalogo-conteudo-descricao-titulo h3.ativado {
