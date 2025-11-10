@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-        }, { root: divScroll, threshold: 1 });
+        }, { root: divScroll, threshold: 0 });
 
         document.querySelectorAll(".blocos, .cobogos, .ladrilhos, .pre-moldados").forEach(div => catalogo_observer.observe(div));
     }
