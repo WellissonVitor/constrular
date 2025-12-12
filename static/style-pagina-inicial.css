@@ -363,16 +363,6 @@
       display: none;
     }
 
-    .item-1::aftr, .item-2::aftr, .item-3::aftr, .item-4::aftr {
-      position: absolute;
-      content: "";
-      top: 25%;
-      right: 0;
-      height: 50%;
-      width: 1px;
-      background-color: #EC1847;
-    }
-
     .item-1.ativado {
       opacity: 1;
       animation: fadeInRight 1.8s ease-in-out;

@@ -1,0 +1,176 @@
+.una-se {
+    margin-top: 2rem;
+}
+
+.una-se-texto .ativado {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.una-se-texto h1 {
+    color: #EC1847;
+    font-weight: bold;
+}
+
+.vagas {
+    margin-top: 3rem;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.card-1.ativado {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.card-2.ativado {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.card-3.ativado {
+    animation: fadeInUp 1.4s ease-in-out;
+}
+
+.vagas-card, .vagas-card-skipper {
+    flex: 1 1 24%;
+    padding: 2.5rem;
+    background-color: white;
+}
+
+.vagas-card-skipper{
+    background-color: transparent;
+}
+
+.vagas-titulo {
+    color: black;
+    font-weight: bold;
+    min-height: 4rem;
+    align-content: center;
+}
+
+.vagas-texto {
+    margin-top: 2rem;
+    line-height: 2;
+}
+
+.una-se-apresentacao{
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    background-color: #fcf5e2;
+}
+
+.una-se-apresentacao .container-xxl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.una-se-apresentacao-texto {
+    flex: 1 1 50%;
+    color: black;
+    line-height: 2;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-content: center;
+}
+
+.una-se-apresentacao-texto.ativado {
+    animation: fadeInRight 1.2s ease-in-out;
+}
+
+.una-se-apresentacao-lista {
+    flex: 1 1 50%;
+}
+
+.una-se-apresentacao-lista.ativado {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.una-se-apresentacao-lista ul li {
+    list-style: none;
+    margin: .5rem;
+}
+
+.una-se-apresentacao-lista ul li h5 {
+    color: #EC1847;
+    font-weight: bold;
+}
+
+.una-se-apresentacao-lista ul li strong {
+    color: black;
+}
+
+.una-se-apresentacao-button {
+    flex: 1 1 100%;
+    margin-top: 2rem;
+}
+
+.una-se-apresentacao-button.ativado {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.una-se-apresentacao-button button{
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
+    background-size: 200% 200%;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+}
+
+.una-se-apresentacao-button button a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsividade */
+    @media (max-width: 1280px) {
+        .vagas-card {
+            flex: 1 1 25%;
+        }
+
+        .vagas-card-skipper {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .vagas-card {
+            flex: 1 1 45%;
+        }
+
+        .una-se-apresentacao-texto {
+            padding: .5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 640px) {
+        .vagas-card {
+            flex: 1 1 100%;
+        }
+
+        .una-se-apresentacao .container-xxl {
+            display: block;
+        }
+
+        .una-se-apresentacao-lista ul {
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .una-se-texto h1 br {
+            display: none;
+        }
+        
+        .vagas-card {
+            padding: 1.5rem;
+        }
+    }
