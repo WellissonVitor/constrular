@@ -6,7 +6,7 @@
     animation: fadeInUp 1s ease-in-out;
 }
 
-.una-se-texto h1 {
+.una-se-texto h1, .form-titulo {
     color: #EC1847;
     font-weight: bold;
 }
@@ -54,7 +54,6 @@
 
 .una-se-apresentacao{
     padding-bottom: 3rem;
-    margin-bottom: 3rem;
     background-color: #fcf5e2;
 }
 
@@ -107,7 +106,37 @@
     animation: fadeInUp 1s ease-in-out;
 }
 
-.una-se-apresentacao-button button{
+.una-se-apresentacao-button button a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.form.ativado {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.form-titulo {
+    text-align: center;
+}
+
+.form-info {
+    text-align: center;
+}
+
+.input-info {
+    margin: 1rem;
+}
+
+.input-info label {
+    min-width: 5rem;
+}
+
+.input-info input{
+    min-width: 20rem;
+}
+
+.form-button{
     padding: 0.3rem 1rem;
     border-radius: 40px;
     background:linear-gradient(164deg, #EC1847 0%, #f77 100%);
@@ -119,12 +148,6 @@
     text-decoration: none;
     display: block;
     margin: auto;
-}
-
-.una-se-apresentacao-button button a {
-    background-color: transparent;
-    text-decoration: none;
-    color: white;
 }
 
 /* Responsividade */
@@ -172,5 +195,9 @@
         
         .vagas-card {
             padding: 1.5rem;
+        }
+
+        .input-info input{
+            min-width: 17rem;
         }
     }
