@@ -192,6 +192,10 @@
       flex: 1 1 33%;
     }
 
+    .bi-instagram::before {
+      color: #EC1847;
+    }
+
     .fundo {
       height: 60px;
       color: white;
