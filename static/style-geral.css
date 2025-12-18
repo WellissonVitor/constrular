@@ -139,14 +139,14 @@
     .footer-titulo {
       margin: 0;
       font-size: calc(1.3rem + .3vw);
-      color: rgb(15, 15, 15);
+      color: rgb(59, 59, 59);
       padding: 1rem 0;
       font-weight: 600;
     }
 
     .footer-subtitulo {
       font-size: calc(.9rem + .3vw);
-      color: #161616;
+      color: #444444;
     }
 
     footer a {
@@ -162,6 +162,7 @@
     .footer-info {
       flex: 1 1 30%;
       text-wrap: balance;
+      text-align: center;
     }
 
     .footer-info-img {
