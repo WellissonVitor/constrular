@@ -1,6 +1,6 @@
 /* Geral */
   /* Fonte */
-    @import url(https://db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans); 
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
   * {
       margin: 0;
@@ -31,7 +31,7 @@
     }
 
     .section-cabecalho-textos-titulo h2 {
-      font-weight: bold;
+      font-weight: 600;
       font-size: calc(1rem + 2vw);
     }
 
@@ -136,10 +136,17 @@
       width: 100vw;
     }
 
-    footer h4 {
-      color: black;
+    .footer-titulo {
+      margin: 0;
+      font-size: calc(1.3rem + .3vw);
+      color: rgb(15, 15, 15);
       padding: 1rem 0;
-      font-weight: bold;
+      font-weight: 600;
+    }
+
+    .footer-subtitulo {
+      font-size: calc(.9rem + .3vw);
+      color: #161616;
     }
 
     footer a {

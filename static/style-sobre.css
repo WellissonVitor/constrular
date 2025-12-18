@@ -37,6 +37,10 @@
         padding: 1rem;
     }
 
+    .sobre-intro p {
+        font-size: calc(1rem + 0.5vw);
+    }
+
     .sobre-intro.ativado {
         animation: fadeInRight 1s ease-in-out;
     }

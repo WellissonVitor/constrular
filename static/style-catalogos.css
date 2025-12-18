@@ -7,8 +7,12 @@
     display: block;
 }
 
-.catalogos .container-xxl {
+.catalogo-interno {
     display: flex;
+}
+
+.catalogos-barra-superior {
+    display: block;
 }
 
 .barra-lateral, .catalogo {
@@ -62,7 +66,6 @@
 
 .catalogo-conteudo {
     display: flex;
-    margin-top: .6rem;
     border-radius: 10px;
     background-color: white;
 }
@@ -78,12 +81,12 @@
     padding-top: 5rem;
 }
 
-.catalogo-conteudo-descricao-titulo h3 {
+.catalogo-conteudo-descricao-titulo p {
     font-weight: 600;
     font-size: calc(1rem + 1.5vw);
 }
 
-.catalogo-conteudo-descricao-titulo h3.ativado {
+.catalogo-conteudo-descricao-titulo p.ativado {
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -142,7 +145,8 @@
     border-radius: 10px;
 }
 
-.catalogo-item-caracteristicas-titulo h4 {
+.catalogo-item-caracteristicas-titulo p {
+    font-size: calc(1rem + .3vw);
     margin-bottom: 0;
     font-weight: 600;
 }
@@ -226,7 +230,7 @@
         padding: .5rem;
     }
 
-    .catalogos .container-xxl {
+    .catalogo-interno {
         flex-direction: column;
         padding: 0;
     }
