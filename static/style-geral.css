@@ -192,7 +192,7 @@
       flex: 1 1 33%;
     }
 
-    .bi-instagram::before {
+    .footer-redes .bi-instagram::before {
       color: black;
     }
 
